@@ -1,0 +1,516 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="http://b99960se.beget.tech/fonts/AlsHauss/ALS_Hauss_Regular_2.1.otf" rel="stylesheet" /> -->
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+            font-family: arial, sans-serif !important;
+		}
+
+		/* [style*="Arial"] {font-family: arial, sans-serif !important;} */
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+    
+		table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .header-td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .slogan p {
+            text-align: left;
+            font-size: 16px;
+            line-height: 22px;
+            color: #2B2D33;
+        }
+
+        .offer-td td {
+            padding-top: 45px;
+            padding-bottom: 35px;
+        }
+
+        .offer-td p {
+            font-size: 16px;
+            line-height: 22px;
+            color: #2B2D33; 
+        }
+
+        .border-bottom-td > table {
+            border-bottom-width: 1px; 
+            border-bottom-style: solid;
+            border-bottom-color: #E1E1E3;
+        }
+
+        .border-bottom-tr {
+            border-bottom-width: 1px; 
+            border-bottom-style: solid;
+            border-bottom-color: #E1E1E3;
+        }
+
+        .features-td td {
+            padding-bottom: 45px;
+        }
+
+        .features-td p {
+            padding-top: 18px;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: #2B2D33;
+        }
+
+        .features-td span {
+            font-size: 13px;
+            line-height: 20px;
+            text-align: center;
+            color: #808185;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            color: #2B2D33;
+            margin-top: 45px;
+            margin-bottom: 25px;
+        }
+
+        .advantages-td table {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .getcard-td td{
+            padding-bottom: 50px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            font-size: 18px !important;
+            line-height: 54px !important;
+        }
+
+        .phones-td td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            vertical-align: top;
+        }
+
+        .phones-td p {
+            font-size: 13px;
+            line-height: 30px;
+            color: #2B2D33;
+        }
+
+        .phones-td a {
+            font-size: 20px;
+            line-height: 30px;
+            text-decoration: none;
+
+            color: #2B2D33;
+        }
+
+        .site-a {
+            font-size: 13px!important;
+            line-height: 30px!important;
+            text-decoration: none!important;
+
+            color: #00AAFF!important;
+        }
+
+        .h3-td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .h3-td h3 {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+
+            color: #2B2D33;
+        }
+
+        .footnote-td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .footnote-td p {
+            font-size: 10px;
+            line-height: 11px;
+            color: #808185;
+        }
+
+        .footer-td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .footer-td p {
+            font-size: 11px;
+            line-height: 18px;
+
+            color: #2B2D33;
+        }
+
+        .first-screen-mobile-td p {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 36px;
+
+            color: #FFFFFF;
+            padding-bottom: 25px;
+        }
+
+        .first-screen-mobile-td  {
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .first-screen-desktop-td {
+            position: absolute;
+        }
+
+        .first-screen-mobile-td {
+            display: none !important;
+        }
+
+        @media (max-width: 640px) {
+            .table-600 {
+                width: 320px !important;
+            }
+
+            .table-560 {
+                width: 300px !important;
+            }
+
+            .table-520 {
+                width: 290px !important;
+            }
+
+            .slogan {
+                display: none !important;
+            }
+
+            .first-screen-desktop-td {
+                display: none !important;
+            }
+
+            .first-screen-mobile-td {
+                display: block !important;
+            }
+
+            .logo img {
+                width: 101px !important;
+            }
+
+            .features-td td {
+                display: block !important;
+            }
+
+            .h2-left-td h2 {
+                width: 205px !important;
+            }
+
+            .advantages-item-td {
+                display: block !important;
+            }
+
+            .phones-td td {
+                display: block !important;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .padding-mobile-td {
+                padding-top: 15px !important;
+                padding-bottom: 15px !important;
+            }
+
+            .footer-td br {
+                display: none !important;
+            }
+        }
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="E5E5E5">
+        <tr>
+            <td>
+                <table class="main table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                    <tr>
+                        <td bgcolor="FEE600" class="header-td">
+                            <table class="table-560" cellpadding="0" cellspacing="0" width="560" align="center">
+                                <tr>
+                                    <td align="left" class="logo">
+                                        <img src="http://b99960se.beget.tech/images/raiff_logo.png" alt="logo" />
+                                    </td>
+                                    <td align="right" class="slogan" width="115">
+                                        <p>Просто. Четко.<br>Компетентно.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first-screen-desktop-td">
+                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="left">
+                                        <a href="#">
+                                            <img src="http://b99960se.beget.tech/images/promo.png" alt="promo" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td bgcolor="26364D" class="first-screen-mobile-td">
+                            <table cellpadding="0" cellspacing="0" width="290" align="center">
+                                <tr style="padding-bottom: 25px;">
+                                    <td align="left">
+                                        <p>Закажите <br /> кредитную карту <br /> с кэшбэком 1,5%</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <div><!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:54px;v-text-anchor:middle;width:195px;" arcsize="19%" stroke="f" fillcolor="#FEE600">
+                                              <w:anchorlock/>
+                                              <center>
+                                            <![endif]-->
+                                                <a class="btn" href="http://"
+                                          style="background-color:#FEE600;border-radius:10px;color:#2B2D33;display:inline-block;font-family:sans-serif;text-align:center;text-decoration:none;width:195px;-webkit-text-size-adjust:none;">Оформить карту</a>
+                                            <!--[if mso]>
+                                              </center>
+                                            </v:roundrect>
+                                          <![endif]--></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="ffffff" class="offer-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td>
+                                        <p>Олег, откройте карту до 31 декабря 2020 года и покупайте по карте без процентов и навсегда забудьте про обслуживание.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="ffffff" class="features-td border-bottom-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <img src="http://b99960se.beget.tech/images/calendar.png" alt="calendar" />
+                                        <p>110 дней</p>
+                                        <span>без процентов на всё</span>
+                                    </td>
+                                    <td align="center">
+                                        <img src="http://b99960se.beget.tech/images/credit.png" alt="credit" />
+                                        <p>до 600 000 ₽</p>
+                                        <span>ваш кредитный лимит</span>
+                                    </td>
+                                    <td align="center">
+                                        <img src="http://b99960se.beget.tech/images/exit.png" alt="exit" />
+                                        <p>бесплатно</p>
+                                        <span>обслуживание и снятие</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="ffffff" class="h2-left-td border-bottom-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center" >
+                                <tr>
+                                    <td align="left">
+                                        <h2>Кредитная карта с бесплатной доставкой</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="advantages-td">
+                                        <table>
+                                            <tr>
+                                                <td align="left" class="advantages-item-td" width="200" style="padding-right: 70px;padding-bottom: 20px;">
+                                                    <table class="table-200" cellpadding="0" cellspacing="0" align="center">
+                                                        <tr>
+                                                            <td align="left" width="50">
+                                                                <img src="http://b99960se.beget.tech/images/card.png" alt="card">
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>Получение <br /> в день обращения</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td align="left" class="advantages-item-td" style="padding-bottom: 20px;;">
+                                                    <table class="table-200" cellpadding="0" cellspacing="0" align="center">
+                                                        <tr>
+                                                            <td align="left" width="50">
+                                                                <img src="http://b99960se.beget.tech/images/passport.png" alt="passport">
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>1 документ. <br />Нужен только паспорт</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" class="advantages-item-td" width="200" style="padding-right: 70px;padding-bottom: 20px;">
+                                                    <table class="table-200" cellpadding="0" cellspacing="0" align="center">
+                                                        <tr>
+                                                            <td align="left" width="50">
+                                                                <img src="http://b99960se.beget.tech/images/procent.png" alt="procent">
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>Скидки у партнёров <br /> банка и Mastercard</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td align="left" class="advantages-item-td" style="padding-bottom: 20px;">
+                                                    <table class="table-200" cellpadding="0" cellspacing="0" align="center">
+                                                        <tr>
+                                                            <td align="left" width="50">
+                                                                <img src="http://b99960se.beget.tech/images/sber.png" alt="offer">
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>Акция для зарплатных <br />клиентов</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="ffffff">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <h2>Начните получать выгоду прямо сейчас!</h2>
+                                    </td>
+                                </tr>
+                                <tr class="getcard-td">
+                                    <td align="center">
+                                        <div><!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:54px;v-text-anchor:middle;width:185px;" arcsize="19%" stroke="f" fillcolor="#FEE600">
+                                              <w:anchorlock/>
+                                              <center>
+                                            <![endif]-->
+                                                <a class="btn" href="http://"
+                                          style="background-color:#FEE600;border-radius:10px;color:#2B2D33;display:inline-block;font-family:sans-serif;text-align:center;text-decoration:none;width:185px;-webkit-text-size-adjust:none;">Получить карту</a>
+                                            <!--[if mso]>
+                                              </center>
+                                            </v:roundrect>
+                                          <![endif]--></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="F4F4F4" class="padding-mobile-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr class="phones-td">
+                                    <td align="left">
+                                        <p>Телефон в Москве:</p>
+                                        <a href="tel:+74957755575">+7 495 775 55 75</a><br />
+                                        <a class="site-a" href="//raiffeisen.ru">raiffeisen.ru</a>
+                                    </td>
+                                    <td align="left">
+                                        <p>Телефон в Москве:</p>
+                                        <a href="tel:+74957755575">+7 495 775 55 75</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="border-bottom-tr">
+                        <td bgcolor="ffffff" class="h3-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td align="left">
+                                        <h3>Ваш Райффайзенбанк</h3>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="border-bottom-tr">
+                        <td bgcolor="ffffff" class="footnote-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td align="left">
+                                        <p>Ставка 10,99% действует для клиентов, которые на момент заключения договора с банком участвуют в программе страхования жизни от несчастных случаев и болезней, на случай дожития до события потери работы заемщиков потребительских кредитов АО «Райффайзенбанк» (далее — программа финансовой защиты) для кредитов на сумму от 1 млн до 2 млн руб. (для Москвы и МО, Санкт-Петербурга и ЛО) / от 700 000 до 1 млн руб. для остальных регионов. При сумме кредита от 500 000 до 999 000 руб. (для Москвы и МО, Санкт- Петербурга и ЛО) / от 300 000 до 699 000 руб. (для остальных регионов) действует ставка 11,99%. При сумме кредита от 90 000 до 499 000 руб. (для Москвы и МО, Санкт- Петербурга и ЛО) / от 90 000 до 299 000 руб. (для остальных регионов) действует ставка 12,99%. В случае прекращения участия заемщика в программе финансовой защиты процентная ставка увеличивается от 3 до 4 п. п. Кредитный договор действует до исполнения сторонами своих обязательств. Срок возврата кредита — от 13 до 60 мес. Банк принимает решение о заключении кредитного договора индивидуально по результатам проведенной оценки кредитоспособности клиента. Информация действительна на 01.07.19. АО «Райффайзенбанк». 0+</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="ffffff" class="footer-td">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520" align="center">
+                                <tr>
+                                    <td align="left">
+                                        <p>© АО «Райффайзенбанк»</p>
+                                        <p>Генеральная лицензия Банка России № 3292 от 17.02.2015.<br />
+                                        Юридический адрес: 129090, Москва, ул. Троицкая, д. 17, стр. 1</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+	</table>
+</body>
+
+</html>
